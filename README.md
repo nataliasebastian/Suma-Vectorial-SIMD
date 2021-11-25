@@ -48,8 +48,8 @@ Este proyecto contiene dos progamas C++ para el cálculo de la suma vectorial.  
     ```
 ## Descripción de archivos
 
-* sumaVectorial.cpp - programa de suma vectorial en C++
-* sumaVectorialSIMD.cpp - programa de suma vectorial en C++ con incorporación de SIMD
+* sumaVectorial.cpp - programa que realiza la suma vectorial en C++
+* sumaVectorialSIMD.cpp - programa que realiza la suma vectorial en C++ con incorporación de SIMD
 * output.txt - contiene los tiempos de ejecución de sumaVectorial.cpp
 * outputSIMD.txt - contiene los tiempos de ejecución de sumaVectorialSIMD.cpp
 * sumaVectorial.sh - contiene las instrucciones descritas en el apartado Uso
