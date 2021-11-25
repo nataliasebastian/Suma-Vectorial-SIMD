@@ -28,6 +28,16 @@ Este proyecto contiene dos progamas C++ para el cálculo de la suma vectorial.  
 
 	Descargar e instalar [MinGW](https://sourceforge.net/projects/mingw/)
 
+## Descripción de archivos
+
+* [sumaVectorial.cpp](sumaVectorial.cpp) - programa que realiza la suma vectorial en C++
+* [sumaVectorialSIMD.cpp](sumaVectorialSIMD.cpp) - programa que realiza la suma vectorial en C++ con incorporación de SIMD
+* [output.txt](output.txt) - contiene los tiempos de ejecución de sumaVectorial.cpp
+* [outputSIMD.txt](outputSIMD.txt) - contiene los tiempos de ejecución de sumaVectorialSIMD.cpp
+* [sumaVectorial.sh](sumaVectorial.sh) - contiene las instrucciones descritas en el apartado Uso
+* [sumaVectorialSIMD.sh](sumaVectorialSIMD.sh) - contiene las instrucciones descritas en el apartado Uso
+* [resultados.xlsx](resultqdos.xlsx) - hoja de cálculo con algunos resultados significativos de las ejecuciones y una representación gráfica
+
 ## Uso
 * Primera opción:
 1. Compilar los proyectos usando GNU Compiler Collection
@@ -46,15 +56,7 @@ Este proyecto contiene dos progamas C++ para el cálculo de la suma vectorial.  
    ./sumaVectorial.sh
    ./sumaVectorialSIMD.sh
     ```
-## Descripción de archivos
 
-* [sumaVectorial.cpp](sumaVectorial.cpp) - programa que realiza la suma vectorial en C++
-* [sumaVectorialSIMD.cpp](sumaVectorialSIMD.cpp) - programa que realiza la suma vectorial en C++ con incorporación de SIMD
-* [output.txt](output.txt) - contiene los tiempos de ejecución de sumaVectorial.cpp
-* [outputSIMD.txt](outputSIMD.txt) - contiene los tiempos de ejecución de sumaVectorialSIMD.cpp
-* [sumaVectorial.sh](sumaVectorial.sh) - contiene las instrucciones descritas en el apartado Uso
-* [sumaVectorialSIMD.sh](sumaVectorialSIMD.sh) - contiene las instrucciones descritas en el apartado Uso
-* [resultados.xlsx](resultqdos.xlsx) - hoja de cálculo con algunos resultados significativos de las ejecuciones y una representación gráfica
 
 
 ## Resultados
