@@ -20,7 +20,7 @@ Este proyecto contiene dos progamas C++ para el cálculo de la suma vectorial.  
   ```sh
   sudo apt-get install gcc
   ```
-	Mac:
+	MacOS:
   ```sh
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   ```
@@ -51,7 +51,7 @@ Este proyecto contiene dos progamas C++ para el cálculo de la suma vectorial.  
    ./nombre-ejecutable1 > output.txt
    ./nombre-ejecutable2 > outputSIMD.txt
    ```
-* Segunda opción: ejecutar el .sh directamente:
+* Segunda opción: ejecutar el .sh directamente (solo disponible para Linux y MacOS)
      ```sh
    ./sumaVectorial.sh
    ./sumaVectorialSIMD.sh
