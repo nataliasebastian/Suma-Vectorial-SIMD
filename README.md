@@ -42,8 +42,8 @@ Este proyecto contiene dos progamas C++ para el cálculo de la suma vectorial.  
 * Primera opción:
 1. Compilar los proyectos usando GNU Compiler Collection
 	 ```sh
-  	gcc sumaVectorial.cpp -o nombre-ejecutable1
-	gcc sumaVectorialSIMD.cpp -o nombre-ejecutable2
+  	g++ sumaVectorial.cpp -o nombre-ejecutable1
+	g++ sumaVectorialSIMD.cpp -o nombre-ejecutable2
  	 ```
 	
 2. Ejecución
