@@ -30,20 +30,22 @@ Este proyecto contiene dos progamas C++ para el cálculo de la suma vectorial.  
 
 ## Descripción de archivos
 
-* [sumaVectorial.cpp](sumaVectorial.cpp) - programa que realiza la suma vectorial en C++
-* [sumaVectorialSIMD.cpp](sumaVectorialSIMD.cpp) - programa que realiza la suma vectorial en C++ con incorporación de SIMD
+* [sumaVectorialIndividual.cpp](sumaVectorialIndividual.cpp) - programa que realiza 1 suma vectorial en C++
+* [sumaVectorialIndividualSIMD.cpp](sumaVectorialIndividualSIMD.cpp) - programa que realiza 1 suma vectorial en C++ con incorporación de SIMD
+* [sumaVectorial.cpp](sumaVectorial.cpp) - programa que realiza 100.000 sumas vectoriales en C++
+* [sumaVectorialSIMD.cpp](sumaVectorialSIMD.cpp) - programa que realiza 100.000 sumas vectoriales en C++ con incorporación de SIMD
 * [output.txt](output.txt) - contiene los tiempos de ejecución de sumaVectorial.cpp
 * [outputSIMD.txt](outputSIMD.txt) - contiene los tiempos de ejecución de sumaVectorialSIMD.cpp
 * [sumaVectorial.sh](sumaVectorial.sh) - contiene las instrucciones descritas en el apartado Uso
 * [sumaVectorialSIMD.sh](sumaVectorialSIMD.sh) - contiene las instrucciones descritas en el apartado Uso
-* [resultados.xlsx](resultqdos.xlsx) - hoja de cálculo con algunos resultados significativos de las ejecuciones y una representación gráfica
+* [resultados.xlsx](resultados.xlsx) - hoja de cálculo los tiempos obtenidos en las ejecuciones y representaciones gráficas
 
 ## Uso
 * Primera opción:
 1. Compilar los proyectos usando GNU Compiler Collection
 	 ```sh
-  	g++ sumaVectorial.cpp -o nombre-ejecutable1
-	g++ sumaVectorialSIMD.cpp -o nombre-ejecutable2
+  	g++ -O0 sumaVectorial.cpp -o nombre-ejecutable1
+	g++ -O0 sumaVectorialSIMD.cpp -o nombre-ejecutable2
  	 ```
 	
 2. Ejecución
@@ -61,19 +63,19 @@ Este proyecto contiene dos progamas C++ para el cálculo de la suma vectorial.  
 
 ## Resultados
 
-Los tiempos de ejecución para distintas cantidades de sumas se guardarán en output.txt y outputSIMD.txt para la versión tradicional y la versión SIMD respectivamente.
+Los tiempos de ejecución para distintas cantidades de sumas se guardarán en output.txt y outputSIMD.txt para la versión tradicional y la versión SIMD respectivamente. 
 
 En una de las ejecuciones obtuvimos los siguientes tiempos:
-	*Versión sin SIMD: 218,083455 segundos (para 100.000 sumas)
-	*Versión con SIMD: 0,857616 segundos (para 100.000 sumas)
+	*Versión sin SIMD: 218,508762  segundos (para 100.000 sumas)
+	*Versión con SIMD: 0,881725 segundos (para 100.000 sumas)
 
-Siendo la versión SIMD aproximadamente 256 veces más rápida que la versión tradicional.
+Siendo la versión SIMD aproximadamente 192 veces más rápida que la versión tradicional.
 
-En el archivos resultados.xlsx hemos comparado los tiempos de ejecución para 1, 1.000, 5.000, 10.000, 20.000, 50.000 y 100.000 sumas. Generando al siguiente representación gráfica:
+En el archivo [resultados.xlsx](resultados.xlsx) hemos comparado los tiempos de ejecución generando la siguiente representación gráfica:
 
 ![](https://www.linkpicture.com/q/grafica_1.jpg)
 
-Aproximadamente a partir de 262 sumas es más efectivo utilizar sumaVectorialSIMD.cpp, pues su tiempo de ejecución a penas crece con respecto al número de sumas. 
+Aproximadamente a partir de 248 sumas es más efectivo utilizar sumaVectorialSIMD.cpp, pues su tiempo de ejecución a penas crece con respecto al número de sumas. 
 
 ## Autores
 
