@@ -74,7 +74,7 @@ Siendo la versión SIMD aproximadamente 192 veces más rápida que la versión t
 
 En el archivo [resultados.xlsx](resultados.xlsx) hemos comparado los tiempos de ejecución generando la siguiente representación gráfica:
 
-![](https://www.linkpicture.com/q/grafica_1.jpg)
+![](https://i.postimg.cc/Hn91ThnZ/Grafica-comparativa.png)
 
 Aproximadamente a partir de 248 sumas es más efectivo utilizar sumaVectorialSIMD.cpp, pues su tiempo de ejecución a penas crece con respecto al número de sumas. 
 
