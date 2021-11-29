@@ -66,8 +66,8 @@ Este proyecto contiene dos progamas C++ para el cálculo de la suma vectorial.  
 Los tiempos de ejecución para distintas cantidades de sumas se guardarán en output.txt y outputSIMD.txt para la versión tradicional y la versión SIMD respectivamente. 
 
 En una de las ejecuciones obtuvimos los siguientes tiempos:
-	*Versión sin SIMD: 218,508762  segundos (para 100.000 sumas)
-	*Versión con SIMD: 0,881725 segundos (para 100.000 sumas)
+* Versión sin SIMD: 218,508762  segundos (para 100.000 sumas)
+* Versión con SIMD: 0,881725 segundos (para 100.000 sumas)
 
 Siendo la versión SIMD aproximadamente 192 veces más rápida que la versión tradicional.
 
